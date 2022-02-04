@@ -6,7 +6,7 @@ current_dir=$(dirname "$0")
 ## Define functions
 function terminator_theme() {
 	echo "Applying terminator themes..."
-	cp config/terminator/config > ~/.config/terminator/config
+	cp ../config/terminator/config > ~/.config/terminator/config
 	echo "Terminator Theme has been updated!"
 }
 
@@ -14,14 +14,14 @@ function vim_theme() {
 	echo "Applying vim theme..."
 	mkdir -p ~/.vim/pack/themes/start
 	git clone https://github.com/dracula/vim.git ~/.vim/pack/themes/start/dracula
-	cp config/vim/vimrc > ~/.vimrc
+	cp ../config/vim/vimrc > ~/.vimrc
 	echo "Vim theme has been updated!"
 }
 
 function fish_prompt() {
 	echo "Applying fish prompt..."
-	cp config/fish/fish_prompt.fish ~/.config/fish/functions/fish_prompt.fish
-	cp config/fish/fish_variables ~/.config/fish/fish_variables
+	cp ../config/fish/fish_prompt.fish ~/.config/fish/functions/fish_prompt.fish
+	cp ../config/fish/fish_variables ~/.config/fish/fish_variables
 	echo "Fish prompt has been changed"
 }
 
@@ -36,7 +36,6 @@ function install_chrome() {
 
 function install_assh() {
 	echo "Install assh"
-	echo ""
 
 	git clone https://github.com/moul/assh.git /tmp/assh
 	cd /tmp/assh 
@@ -44,6 +43,9 @@ function install_assh() {
 	go build
 	sudo cp assh /usr/bin/
 	cd $current_dir
+
+	mkdir -p ~/.ssh
+	cp ../config/assh/assh.yml ~/.ssh/
 
 	echo ""
 	echo "assh done"
