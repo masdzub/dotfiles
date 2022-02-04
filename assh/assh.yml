@@ -1,0 +1,7 @@
+defaults:
+  GSSAPIAuthentication: yes
+  ServerAliveInterval: 120
+
+includes:
+  - ~/.ssh/personal.yml
+  - ~/.ssh/work.yml
