@@ -16,7 +16,7 @@ echo ""
 echo "Installing apps"
 echo ""
 
-sudo apt install make gcc golang ansible vim nano mc ncdu git fish wireguard terminator fonts-hack-ttf flameshot whois dnsutils vlc apt-transport-https -y
+sudo apt install make gcc golang ansible vim nano mc ncdu git fish wireguard fonts-hack-ttf whois dnsutils vlc apt-transport-https -y
 
 echo ""
 

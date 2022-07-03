@@ -6,7 +6,8 @@ current_dir=$(dirname "$0")
 ## Define functions
 function terminator_theme() {
 	echo "Applying terminator themes..."
-	cp ../config/terminator/config > ~/.config/terminator/config
+	mkdir -p ~/.config/terminator
+	cp ../config/terminator/config ~/.config/terminator/config
 	echo "Terminator Theme has been updated!"
 }
 
@@ -20,6 +21,8 @@ function vim_theme() {
 
 function fish_prompt() {
 	echo "Applying fish prompt..."
+	mkdir -p ~/.config/fish
+	mkdir -p ~/.config/fish/functions
 	cp ../config/fish/fish_prompt.fish ~/.config/fish/functions/fish_prompt.fish
 	cp ../config/fish/fish_variables ~/.config/fish/fish_variables
 	echo "Fish prompt has been changed"
