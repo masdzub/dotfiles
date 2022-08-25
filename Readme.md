@@ -11,4 +11,4 @@ This setting is for:
 
 ## Add ons
 - chrome
- - nightab
+    - nightab
