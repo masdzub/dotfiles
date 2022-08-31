@@ -1,0 +1,12 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhistcnt =0
+let g:netrw_dirhist_0='/home/lotus/.vim'
+let g:netrw_dirhist_9='/home/lotus'
+let g:netrw_dirhist_8='/home/lotus/dot-config'
+let g:netrw_dirhist_7='/home/lotus/dot-config/terminator'
+let g:netrw_dirhist_6='/home/lotus/dot-config'
+let g:netrw_dirhist_5='/home/lotus'
+let g:netrw_dirhist_4='/home/lotus/dotfiles'
+let g:netrw_dirhist_3='/home/lotus/dotfiles/config'
+let g:netrw_dirhist_2='/home/lotus/dotfiles/config/terminator'
+let g:netrw_dirhist_1='/home/lotus/dotfiles/config'
