@@ -23,3 +23,6 @@ set ruler
  
 set undolevels=1000	
 set backspace=indent,eol,start
+if has('mouse')
+          set mouse=a
+endif
